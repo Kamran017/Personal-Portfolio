@@ -1,0 +1,200 @@
+body {
+  font-family: 'Alegreya', serif;
+}
+
+.main {
+  height: 75vh;
+  background-image: url("../image/3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.main #creative .menu {
+  padding-left: 2px;
+  padding-top: 0px;
+}
+.main #creative .menu .col-xs-6 {
+  padding-right: 14px;
+}
+.main #creative .menu .col-xs-6 h2 {
+  position: relative;
+  bottom: 2px;
+  color: #fbfbfb;
+  cursor: pointer;
+  right: 0px;
+}
+.main #creative .menu .col-xs-6 span {
+  float: right;
+  margin-top: 21px;
+  cursor: pointer;
+}
+.main #creative .menu .col-xs-6 span i {
+  font-size: 28px;
+  color: #fbfbfb;
+}
+.main #creative .menu .col-xs-6 .bar {
+  display: none;
+}
+.main #creative .menu .col-xs-6 .bar ul {
+  position: relative;
+  top: 3px;
+  list-style: none;
+  display: flex;
+}
+.main #creative .menu .col-xs-6 .bar ul li {
+  padding: 20px;
+  cursor: pointer;
+}
+.main #creative .menu .col-xs-6 .bar ul li a {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 20px;
+  color: #fbfbfb;
+  text-decoration: none;
+}
+.main #creative .menu .col-xs-6 .bar ul li:hover {
+  transition: all .3s ease-in-out;
+  background: #fbfbfb;
+  transform: scale(1.1);
+}
+.main #creative .menu .col-xs-6 .bar ul li:hover a {
+  color: black;
+}
+.main #creative .middle {
+  margin-top: 135px;
+  position: relative;
+  right: 12.5px;
+}
+.main #creative .middle .text p {
+  font-size: 36px;
+  color: #fbfbfb;
+}
+.main #creative .middle .video span {
+  margin-left: 31px;
+}
+.main #creative .middle .video span i {
+  font-size: 35px;
+  color: #fbfbfb;
+}
+.main #creative .middle .social {
+  padding: 0 10px;
+  margin-top: 20px;
+  display: flex;
+}
+.main #creative .middle .social span {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.main #creative .middle .social span i {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  border: 1px solid #fff;
+  line-height: 1.8;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #fbfbfb;
+}
+.main #creative .middle .social span i:hover {
+  transition: all .3s ease-in-out;
+  background: #fbfbfb;
+  color: black;
+}
+
+@media screen and (min-width: 267px) {
+  #creative .text p {
+    font-size: 30px !important;
+  }
+}
+@media screen and (min-width: 289px) {
+  .container {
+    padding: 0 !important;
+  }
+
+  #creative .video {
+    width: 300px;
+    position: relative;
+    left: 211px;
+    bottom: 48.5px;
+  }
+  #creative .text p {
+    font-size: 36px !important;
+  }
+  #creative .social {
+    position: relative;
+    left: 1px;
+    bottom: 40px;
+  }
+  #creative .social span {
+    margin-right: 16px !important;
+  }
+}
+@media screen and (max-width: 300px) and (min-width: 289px) {
+  .container {
+    padding: 0px;
+  }
+
+  #creative .video {
+    position: relative;
+    top: 12px;
+    left: -59px;
+  }
+  #creative .social {
+    bottom: 0px !important;
+  }
+}
+@media (min-width: 755px) {
+  #creative .col-xs-6 span {
+    visibility: hidden;
+  }
+  #creative .col-xs-6 .bar {
+    position: relative;
+    display: block !important;
+  }
+  #creative .col-xs-6 .bar ul {
+    right: 16.5em;
+  }
+  #creative .middle .text p {
+    font-size: 65px !important;
+  }
+  #creative .middle .video span {
+    position: relative;
+    right: -176px;
+    bottom: 27px;
+  }
+  #creative .middle .video span i {
+    font-size: 55px !important;
+  }
+  #creative .middle .social {
+    left: 5px;
+  }
+  #creative .middle .social span {
+    margin-right: 31px !important;
+  }
+  #creative .middle .social span i {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 26px !important;
+  }
+}
+@media screen and (max-width: 1065px) and (min-width: 865px) {
+  #creative .col-xs-6 .bar ul {
+    right: 12.3em;
+  }
+}
+@media screen and (max-width: 1190px) and (min-width: 1065px) {
+  #creative .col-xs-6 .bar ul {
+    right: 8em;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 1190px) {
+  #creative .col-xs-6 .bar ul {
+    right: 5em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
