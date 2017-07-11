@@ -1,0 +1,127 @@
+#about{
+    .container{
+        .heading{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+            h3{
+                color: #090F29;
+                font-weight: 700;
+                font-size: 32px;
+            }
+        }
+        .img{
+            padding: 10px;
+            margin-bottom: 15px;
+            img{
+                width: 100%;
+                padding: 4px;
+                border: 1.5px solid #ddd;
+                border-radius: 4px;
+            }
+        }
+        .info{
+            p.heading{
+                text-align: center;
+                margin: 15px 0;
+                padding: 0;
+                font-weight: 900;
+                font-style: italic;
+            }
+        }
+        .skillBar{
+            height: 35.5vh;
+            margin-top: 17px;
+            margin-bottom: 10px;
+            background: rebeccapurple;
+        }
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// Responsive design
+@media screen and(min-width: 750px) and (max-width:920px){
+    #about{
+        .container{
+            .heading{
+                h3{
+                    font-size: 52px;
+                }
+            }
+            .img{
+                position: relative;
+                top: 30px;
+                img{
+                    width: 45%;
+                    float: right;
+                }
+            }
+            .info{
+                width: 43vw;
+            }
+            .skillBar{
+                width: 43vw;
+            }
+            p.heading{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 850px) and (max-width:1200px){
+     #about{
+        .container{
+             .heading{
+                h3{
+                    font-size: 52px;
+                }
+            }
+            p.heading{
+                font-size: 22px;
+            }
+            .img{
+                img{
+                    width: 35%;
+                    float: right;
+                }
+            }
+            .info{
+                width: 47vw;
+            }
+            .skillBar{
+                width: 47vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1199px){
+     #about{
+        .container{
+             .heading{
+                h3{
+                    font-size: 52px;
+                }
+            }
+            p.heading{
+                font-size: 22px;
+            }
+            .img{
+                position: relative;
+                top: 27.5px;
+                img{
+                    width: 27%;
+                    float: right;
+                }
+            }
+            .info{
+                width: 52vw;
+            }
+            .skillBar{
+                width: 52vw;
+            }
+        }
+    }
+}

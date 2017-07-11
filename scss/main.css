@@ -2,49 +2,52 @@ body {
   font-family: 'Alegreya', serif;
 }
 
-.main {
-  height: 75vh;
+.introduction {
   background-image: url("../image/3.jpg");
   background-size: cover;
   background-position: center center;
 }
-.main #creative .menu {
-  padding-left: 2px;
+.introduction #creative {
+  height: 90vh;
+}
+.introduction #creative .menu {
+  padding-left: 0px;
+  padding-right: 0;
   padding-top: 0px;
 }
-.main #creative .menu .col-xs-6 {
+.introduction #creative .menu .col-xs-6 {
   padding-right: 14px;
 }
-.main #creative .menu .col-xs-6 h2 {
+.introduction #creative .menu .col-xs-6 h2 {
   position: relative;
   bottom: 2px;
   color: #fbfbfb;
   cursor: pointer;
   right: 0px;
 }
-.main #creative .menu .col-xs-6 span {
+.introduction #creative .menu .col-xs-6 span {
   float: right;
   margin-top: 21px;
   cursor: pointer;
 }
-.main #creative .menu .col-xs-6 span i {
+.introduction #creative .menu .col-xs-6 span i {
   font-size: 28px;
   color: #fbfbfb;
 }
-.main #creative .menu .col-xs-6 .bar {
+.introduction #creative .menu .col-xs-6 .bar {
   display: none;
 }
-.main #creative .menu .col-xs-6 .bar ul {
+.introduction #creative .menu .col-xs-6 .bar ul {
   position: relative;
   top: 3px;
   list-style: none;
   display: flex;
 }
-.main #creative .menu .col-xs-6 .bar ul li {
+.introduction #creative .menu .col-xs-6 .bar ul li {
   padding: 20px;
   cursor: pointer;
 }
-.main #creative .menu .col-xs-6 .bar ul li a {
+.introduction #creative .menu .col-xs-6 .bar ul li a {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -52,40 +55,48 @@ body {
   color: #fbfbfb;
   text-decoration: none;
 }
-.main #creative .menu .col-xs-6 .bar ul li:hover {
+.introduction #creative .menu .col-xs-6 .bar ul li:hover {
   transition: all .3s ease-in-out;
   background: #fbfbfb;
   transform: scale(1.1);
 }
-.main #creative .menu .col-xs-6 .bar ul li:hover a {
+.introduction #creative .menu .col-xs-6 .bar ul li:hover a {
   color: black;
 }
-.main #creative .middle {
+.introduction #creative .middle {
   margin-top: 135px;
   position: relative;
   right: 12.5px;
 }
-.main #creative .middle .text p {
-  font-size: 36px;
+.introduction #creative .middle .text {
+  padding-left: 12px;
+}
+.introduction #creative .middle .text p {
+  font-size: 28px;
   color: #fbfbfb;
 }
-.main #creative .middle .video span {
+.introduction #creative .middle .video span {
+  cursor: pointer;
   margin-left: 31px;
 }
-.main #creative .middle .video span i {
+.introduction #creative .middle .video span i {
   font-size: 35px;
   color: #fbfbfb;
 }
-.main #creative .middle .social {
+.introduction #creative .middle .video span i:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+.introduction #creative .middle .social {
   padding: 0 10px;
   margin-top: 20px;
   display: flex;
 }
-.main #creative .middle .social span {
+.introduction #creative .middle .social span {
   margin-right: 8px;
   cursor: pointer;
 }
-.main #creative .middle .social span i {
+.introduction #creative .middle .social span i {
   width: 30px;
   height: 30px;
   display: block;
@@ -99,55 +110,29 @@ body {
   font-size: 16px;
   color: #fbfbfb;
 }
-.main #creative .middle .social span i:hover {
+.introduction #creative .middle .social span i:hover {
   transition: all .3s ease-in-out;
   background: #fbfbfb;
   color: black;
 }
 
-@media screen and (min-width: 267px) {
-  #creative .text p {
-    font-size: 30px !important;
+@media screen and (min-width: 292px) and (max-width: 293px) {
+  .social {
+    bottom: 0px;
   }
 }
-@media screen and (min-width: 289px) {
-  .container {
-    padding: 0 !important;
-  }
-
-  #creative .video {
-    width: 300px;
+@media screen and (min-width: 293px) {
+  #creative .middle .video span {
     position: relative;
-    left: 211px;
-    bottom: 48.5px;
+    bottom: 44px;
+    left: 153px;
   }
-  #creative .text p {
-    font-size: 36px !important;
-  }
-  #creative .social {
+  #creative .middle .social {
     position: relative;
-    left: 1px;
-    bottom: 40px;
-  }
-  #creative .social span {
-    margin-right: 16px !important;
+    bottom: 50px;
   }
 }
-@media screen and (max-width: 300px) and (min-width: 289px) {
-  .container {
-    padding: 0px;
-  }
-
-  #creative .video {
-    position: relative;
-    top: 12px;
-    left: -59px;
-  }
-  #creative .social {
-    bottom: 0px !important;
-  }
-}
-@media (min-width: 755px) {
+@media (min-width: 749px) {
   #creative .col-xs-6 span {
     visibility: hidden;
   }
@@ -156,15 +141,15 @@ body {
     display: block !important;
   }
   #creative .col-xs-6 .bar ul {
-    right: 16.5em;
+    right: 17.2em;
   }
   #creative .middle .text p {
     font-size: 65px !important;
   }
   #creative .middle .video span {
     position: relative;
-    right: -176px;
-    bottom: 27px;
+    left: 28em;
+    bottom: 76px;
   }
   #creative .middle .video span i {
     font-size: 55px !important;
@@ -183,17 +168,279 @@ body {
 }
 @media screen and (max-width: 1065px) and (min-width: 865px) {
   #creative .col-xs-6 .bar ul {
-    right: 12.3em;
+    right: 16.7em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #creative .col-xs-6 .bar ul {
+    right: 9.7em;
   }
 }
 @media screen and (max-width: 1190px) and (min-width: 1065px) {
   #creative .col-xs-6 .bar ul {
-    right: 8em;
+    right: 9.7em;
   }
 }
-@media screen and (max-width: 1300px) and (min-width: 1190px) {
+@media screen and (max-width: 1250px) and (min-width: 1190px) {
   #creative .col-xs-6 .bar ul {
     right: 5em;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 1250px) {
+  #creative .col-xs-6 .bar ul {
+    right: 2em;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1300px) {
+  #creative .col-xs-6 .bar ul {
+    right: 2.8em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #creative .col-xs-6 .bar ul {
+    right: -5.5em;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #creative .col-xs-6 .bar ul {
+    right: 1.8em;
+  }
+}
+#about .container .heading {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#about .container .heading h3 {
+  color: #090F29;
+  font-weight: 700;
+  font-size: 32px;
+}
+#about .container .img {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+#about .container .img img {
+  width: 100%;
+  padding: 4px;
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+}
+#about .container .info p.heading {
+  text-align: center;
+  margin: 15px 0;
+  padding: 0;
+  font-weight: 900;
+  font-style: italic;
+}
+#about .container .skillBar {
+  height: 35.5vh;
+  margin-top: 17px;
+  margin-bottom: 10px;
+  background: rebeccapurple;
+}
+
+@media screen and (min-width: 750px) and (max-width: 920px) {
+  #about .container .heading h3 {
+    font-size: 52px;
+  }
+  #about .container .img {
+    position: relative;
+    top: 30px;
+  }
+  #about .container .img img {
+    width: 45%;
+    float: right;
+  }
+  #about .container .info {
+    width: 43vw;
+  }
+  #about .container .skillBar {
+    width: 43vw;
+  }
+  #about .container p.heading {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+  #about .container .heading h3 {
+    font-size: 52px;
+  }
+  #about .container p.heading {
+    font-size: 22px;
+  }
+  #about .container .img img {
+    width: 35%;
+    float: right;
+  }
+  #about .container .info {
+    width: 47vw;
+  }
+  #about .container .skillBar {
+    width: 47vw;
+  }
+}
+@media screen and (min-width: 1199px) {
+  #about .container .heading h3 {
+    font-size: 52px;
+  }
+  #about .container p.heading {
+    font-size: 22px;
+  }
+  #about .container .img {
+    position: relative;
+    top: 27.5px;
+  }
+  #about .container .img img {
+    width: 27%;
+    float: right;
+  }
+  #about .container .info {
+    width: 52vw;
+  }
+  #about .container .skillBar {
+    width: 52vw;
+  }
+}
+#service .bgImg {
+  height: auto;
+  background-image: url(../image/4.jpg);
+  background-attachment: fixed;
+  background-position: 59% -8em;
+  background-size: cover;
+}
+#service .bgImg .container .header {
+  margin: 50px 0px;
+  text-align: center;
+}
+#service .bgImg .container .header p {
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+#service .bgImg .container .top .first {
+  margin-bottom: 30px;
+  width: 220px;
+  height: 180px;
+  background: red;
+}
+#service .bgImg .container .top .second {
+  margin-bottom: 30px;
+  width: 220px;
+  height: 180px;
+  background: black;
+}
+#service .bgImg .container .bottom .third {
+  margin-bottom: 30px;
+  width: 220px;
+  height: 180px;
+  background: aquamarine;
+}
+#service .bgImg .container .bottom .fourth {
+  margin-bottom: 35px;
+  width: 220px;
+  height: 180px;
+  background: forestgreen;
+}
+
+@media (min-width: 749px) {
+  #service .container .header p {
+    font-size: 50px !important;
+  }
+  #service .container .top, #service .container .bottom {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#work .container .header {
+  margin: 40px 0px;
+  text-align: center;
+}
+#work .container .header p {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #090f29;
+}
+#work .container ul {
+  list-style: none;
+  text-align: center;
+  padding: 0 12px;
+}
+#work .container ul li {
+  cursor: pointer;
+  padding: 2.5px;
+  font-size: 15.5px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+#work .container ul li.active {
+  transition: all .3s ease-in-out;
+  color: #fbfbfb;
+  background: #090f29;
+}
+#work .container .content .all {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#work .container .content .design {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#work .container .content .develop {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#work .container .content .photograph {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#work .container .content .tabItem {
+  display: none;
+}
+#work .container .content .tabItem img {
+  position: relative;
+  left: 12px;
+  width: 229%;
+  margin-bottom: 10px;
+}
+#work .container .content .tabItem.active {
+  display: block;
+  animation: 1s disp forwards;
+}
+@keyframes disp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 749px) {
+  ul.category {
+    display: flex;
+    padding: 10px;
+  }
+  ul.category li {
+    margin-right: 20px;
+    padding: 8.5px 20px !important;
+  }
+
+  .tabItem.active {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .tabItem.active img {
+    width: 100%  !important;
+    height: 50%;
   }
 }
 

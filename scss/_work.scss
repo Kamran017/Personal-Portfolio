@@ -1,0 +1,101 @@
+$white:rgb(251, 251, 251) ;
+
+#work{
+    .container{
+        .header{
+            margin: 40px 0px;
+            text-align: center;
+            p{
+                text-transform: capitalize;
+                font-size: 30px;
+                font-weight: bold;
+                font-style: italic;
+                color: rgb(9, 15, 41);
+            }
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            padding: 0 12px;
+            li{
+                cursor: pointer;
+                padding: 2.5px;
+                font-size: 15.5px;
+                border-radius: 2px;
+                margin-bottom: 4px;
+                &.active{
+                    transition: all .3s ease-in-out;
+                    color: $white;
+                    background: rgb(9, 15, 41);
+                }
+            }
+        }
+        .content{
+            .all{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            .design{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            .develop{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            .photograph{
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            .tabItem{
+                display: none;
+                img{
+                    position: relative;
+                    left: 12px;
+                    width: 229%;
+                    margin-bottom: 10px;
+                }
+                 &.active{
+                    display: block;
+                    animation: 1s disp forwards;
+                }
+                @keyframes disp{
+                 0%{
+                    transform: scale(0)
+                 }
+                   100%{
+                       transform: scale(1)
+                   }
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive design stars
+
+@media (min-width:749px){
+    ul.category{
+        display: flex;
+        padding: 10px;
+        li{
+            margin-right: 20px;
+            padding: 8.5px 20px!important;  
+        }
+    }
+    .tabItem.active{
+        display: flex !important;
+        flex-wrap: wrap;
+        img{
+            width: 100%  !important;
+            height: 50%;
+        }
+    }
+}
+
+// Responsive design ends
