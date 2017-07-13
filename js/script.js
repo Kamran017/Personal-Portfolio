@@ -25,13 +25,6 @@ $(document).ready(function(){
 
 
 
-
-// Onload function ends
-
-
-
-
-
 // About=>Skill bar section
 
 var bars = document.querySelectorAll('.bar').forEach((bar) => {
@@ -79,7 +72,7 @@ window.onload = function() {
       currentCount++;
     }, 15);
 
-     $(".loader").fadeOut(500);
+     $(".loader").fadeOut(1000);
 
   });
 
@@ -122,8 +115,9 @@ function scrollPage(){
       menu.style.backgroundColor = "#090F29";
       menu.style.zIndex = "99";
       ul.style.top="6px";
-      ul.style.right="-8.2em";
+      ul.style.right="18.2em";
       fromBottom.style.display="block"
+      document.querySelector("#h").style.textAlign="center";
 
     }
     else{
@@ -135,6 +129,7 @@ function scrollPage(){
       ul.style.top="";
       ul.style.right="";
       fromBottom.style.display=""
+      document.querySelector("#h").style.textAlign="";
   }
 }
 window.addEventListener("scroll", scrollPage);  
@@ -199,6 +194,7 @@ $('#hire .field:nth-child(2) input').blur(function () {
         }
     });
 });
+
 
 
 // Contact us section ends
