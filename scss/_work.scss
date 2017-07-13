@@ -1,6 +1,7 @@
 $white:rgb(251, 251, 251) ;
 
 #work{
+    margin-bottom: 50px;
     .container{
         .header{
             margin: 40px 0px;
@@ -9,7 +10,6 @@ $white:rgb(251, 251, 251) ;
                 text-transform: capitalize;
                 font-size: 30px;
                 font-weight: bold;
-                font-style: italic;
                 color: rgb(9, 15, 41);
             }
         }
@@ -31,33 +31,15 @@ $white:rgb(251, 251, 251) ;
             }
         }
         .content{
-            .all{
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
-            }
-            .design{
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
-            }
-            .develop{
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
-            }
-            .photograph{
-                width: 100px;
-                height: 100px;
+            .all, .develop, .design,.photograph {
                 margin-bottom: 10px;
             }
             .tabItem{
                 display: none;
                 img{
-                    position: relative;
-                    left: 12px;
-                    width: 229%;
+                    width: 100%;
                     margin-bottom: 10px;
+                    margin-right: 10px;
                 }
                  &.active{
                     display: block;
@@ -71,7 +53,7 @@ $white:rgb(251, 251, 251) ;
                        transform: scale(1)
                    }
                 }
-            }
+            } 
         }
     }
 }
@@ -80,20 +62,36 @@ $white:rgb(251, 251, 251) ;
 // Responsive design stars
 
 @media (min-width:749px){
+    .header{
+        p{
+            font-size: 50px !important;
+        }
+    }
     ul.category{
         display: flex;
-        padding: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
         li{
             margin-right: 20px;
             padding: 8.5px 20px!important;  
         }
     }
-    .tabItem.active{
-        display: flex !important;
+    .active{
+        display: flex ;
+        flex-direction: row;
         flex-wrap: wrap;
         img{
-            width: 100%  !important;
-            height: 50%;
+            position: relative;
+            left: 49px;
+            width: 40% !important;
+        }
+    }
+}
+
+@media (min-width:806px){
+     .active{
+        img{
+            left: 87px !important;
         }
     }
 }

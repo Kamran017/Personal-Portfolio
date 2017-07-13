@@ -23,11 +23,14 @@ $spaceBetween:space-between;
             .col-xs-6{
                 padding-right: 14px;
                 h2{
-                    position: relative;
-                    bottom: 2px;
-                    color: $white;
-                    cursor: $pointer;
-                    right: 0px;
+                    a{
+                        position: relative;
+                        bottom: 2px;
+                        color: $white;
+                        cursor: $pointer;
+                        right: 0px;
+                        text-decoration: none;
+                    }
                 }
                 span{
                     float: right;
@@ -236,7 +239,7 @@ $spaceBetween:space-between;
                 position: relative;
                 display: block !important;
                 ul{
-                    right: 17.2em;
+                    // right: 18.2em !important;
                 }
             }
         }
@@ -272,98 +275,21 @@ $spaceBetween:space-between;
     }
 }
 
-@media screen and (max-width: 1065px) and (min-width: 865px){
-       #creative{
-            .col-xs-6{
-                .bar{
-                    ul{
-                        right: 16.7em;
-                    }
-                }
-            }
-       }
-}
 
-@media screen and(min-width: 1000px){
-     #creative{
-            .col-xs-6{
-                .bar{
-                    ul{
-                        right: 9.7em;
-                    }
-                }
-            }
-       }
-}
+// @media  (min-width: 749px) and (max-width:850px){
+//     .bar{
+//         ul{
+//             right: 18.2em !important;
+//         }
+//     }
+// }
 
-@media screen and (max-width: 1190px) and (min-width: 1065px){
-     #creative{
-        .col-xs-6{
-            .bar{
-                ul{
-                    right: 9.7em;
-                }
-            }
-        }
-       }
-}
-
-@media screen and (max-width: 1250px) and (min-width: 1190px){
-     #creative{
-        .col-xs-6{
-            .bar{
-                ul{
-                    right: 5em;
-                }
-            }
-        }
-       }
-}
-
-@media screen and (max-width: 1300px) and (min-width: 1250px){
-     #creative{
-        .col-xs-6{
-            .bar{
-                ul{
-                    right: 2em;
-                }
-            }
-        }
-       }
-}
-
-@media screen and (max-width: 1400px) and (min-width: 1300px){
-     #creative{
-        .col-xs-6{
-            .bar{
-                ul{
-                    right: 2.8em;
-                }
-            }
-        }
-       }
-}
-
-@media screen and (min-width: 1400px){
-     #creative{
-        .col-xs-6{
-            .bar{
-                ul{
-                    right: -5.5em;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1500px){
-     #creative{
-        .col-xs-6{
-            .bar{
-                ul{
-                    right: 1.8em;
-                }
-            }
-        }
-    }
-}
+// @media (min-width:850px){
+//     #creative{
+//         .bar{
+//             ul{
+//                 right: 15.2em !important;
+//             }
+//         }
+//     }
+// }

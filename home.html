@@ -8,6 +8,11 @@
     
     <link rel="icon" type="image/png" href="image/1.png">
 
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--ends-->
+
     <!--BOOTSTRAP-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -23,178 +28,397 @@
 
     <!--Sass-->
     <link rel="stylesheet" href="scss/main.css">
+
+
+    <!--OWL CAROUSEL-->
+        <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
+    <!--ENDS-->
+
 </head>
-<body>
-    <!--Introduction to the website (I am creative)-->
-    <div class="introduction">
-        <div class="container Creative">
-            <div id="creative">
-                <div class="menu col-xs-12">
-                    <div class="col-xs-6">
-                        <h2>
-                            PEACE
-                        </h2>
-                    </div>
-                    <div class="col-xs-6">
-                        <span>
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                        <div class="bar">
+<body onload="loadFun()">
+
+    <!--Loader div-->
+    
+    <div class="loader">
+        <img src="image/3.gif" alt="">
+    </div>
+    <!--loader div ends-->
+    <div class="basic">
+         <!--Introduction to the website (I am creative)-->
+        <div class="introduction">
+            <div class="container Creative">
+                <div id="creative">
+                    <div class="menu col-xs-12">
+                        <div class="col-xs-6">
+                            <h2>
+                                <a href="">Peace</a>
+                            </h2>
+                        </div>
+                        <div class="col-xs-6">
+                            <span>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span>
+                            <div class="bar">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Service
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Work
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Testimonial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="middle col-xs-12">
+                        <div class="col-xs-12 text">
+                            <p>
+                                I Am Creative
+                            </p>
+                        </div>
+                        <div class=" video">
+                            <span>
+                                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="social">
+                            <span>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </span>
+                            <span>
+                                <i class="fa fa-google" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!--Ends-->
+
+        <!--About section starts-->
+        <div id="about">
+            <div class="container">
+                <div class="heading">
+                    <h3>
+                        About Me
+                    </h3>
+                </div>
+                <div class="img">
+                    <img src="image/2.png" alt="">
+                </div>
+                <div class="info">
+                    <p class="heading">
+                        I'M 16 YEARS OLD DEVELOPER AND FOCUSED ON BRAND IDENTITY!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia illum sit recusandae nisi odit assumenda, sed iusto maiores dolorum, iste quaerat quidem a iure. Quod asperiores veritatis illum alias, inventore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptates vitae reiciendis quidem distinctio numquam architecto, pariatur officia itaque, tempora repudiandae doloremque cum veniam nisi asperiores. Eos perspiciatis hic aut.
+                    </p>
+                </div>
+                <div class="skillBar">
+                    <div class="skill_box row">
+                        <h3>Development</h3>
+                        <div class="skills">
                             <ul>
-                                <li>
-                                    <a href="">
-                                        About
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Service
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Work
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Testimonial
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        Contact
-                                    </a>
-                                </li>
+                            <li><span class="title">HTML5</span><span class="bar" data-percent="95"><b></b></span></li>
+                            <li><span class="title">CSS3 & SASS/SCSS</span><span class="bar" data-percent="95"><b></b></span></li>
+                            <li><span class="title">JavaScript & ES6</span><span class="bar" data-percent="55"><b></b></span></li>
+                            <li><span class="title">jQuery</span><span class="bar" data-percent="75"><b></b></span></li>
+                            <li><span class="title">Bootstrap</span><span class="bar" data-percent="65"><b>       </b></span></li>
                             </ul>
+                            <h3 class="lowerTitle">Charactersitc</h3>
+                            <div class="circles_box row">
+                            <div class="svg_box col-sm-4">
+                                <div class="inner">
+                                <div class="text">Power</div>
+                                <div class="number" data-num="70">0%</div>
+                                </div>
+                                <svg class="pie" viewbox="0 0 10 10" data-percent="70">
+                                <circle class="inner_circle" cx="5" cy="5" r="4"></circle>
+                                <circle class="circle" cx="5" cy="5" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="svg_box col-sm-4">
+                                <div class="inner">
+                                <div class="text">Power</div>
+                                <div class="number" data-num="80">0%</div>
+                                </div>
+                                <svg class="pie" viewbox="0 0 10 10" data-percent="80">
+                                <circle class="inner_circle" cx="5" cy="5" r="4"></circle>
+                                <circle class="circle" cx="5" cy="5" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div class="svg_box col-sm-4">
+                                <div class="inner">
+                                <div class="text">Power</div>
+                                <div class="number" data-num="90">0%</div>
+                                </div>
+                                <svg class="pie" viewbox="0 0 10 10" data-percent="90">
+                                <circle class="inner_circle" cx="5" cy="5" r="4"></circle>
+                                <circle class="circle" cx="5" cy="5" r="4"></circle>
+                                </svg>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                </div>  
-                <div class="middle col-xs-12">
-                    <div class="col-xs-12 text">
+                </div>
+            </div>
+        </div>
+        <!--About section ends-->
+
+        <!--Service secton starts-->
+        <div id="service">
+            <div class="bgImg">
+                <div id="background"></div>
+                <div class="container">
+                    <div class="header">
                         <p>
-                            I Am Creative
+                            what i offer ?
                         </p>
                     </div>
-                    <div class=" video">
-                        <span>
-                            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-                        </span>
+                    <!--Abilities that i will offer I wil fill in this blank later-->
+                    <div class="top">
+                        <div class="first">
+                            <div class="col-xs-4">
+                                <span>
+                                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-8">
+                                <p class="header">
+                                    BRANDING & IDENTITY
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates exercitationem, esse debitis fuga odit molliti.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="col-xs-4">
+                                <span>
+                                    <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-8">
+                                <p class="header">
+                                    BRANDING & IDENTITY
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates exercitationem, esse debitis fuga odit molliti.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="social">
-                        <span>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </span>
-                        <span>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </span>
-                        <span>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </span>
-                        <span>
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </span>
-                        <span>
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </span>
-                        <span>
-                            <i class="fa fa-google" aria-hidden="true"></i>
-                        </span>
+                    <div class="bottom">
+                        <div class="third">
+                            <div class="col-xs-4">
+                                <span>
+                                    <i class="fa fa-binoculars" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-8">
+                                <p class="header">
+                                    BRANDING & IDENTITY
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates exercitationem, esse debitis fuga odit molliti.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fourth">
+                            <div class="col-xs-4">
+                                <span>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-8">
+                                <p class="header">
+                                    BRANDING & IDENTITY
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates exercitationem, esse debitis fuga odit molliti.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div> 
+                    <!--Ends-->
+                </div>
             </div>
         </div>
-    </div>
-    <!--Ends-->
+        <!--Service section ends-->
 
-    <!--About section starts-->
-    <div id="about">
-        <div class="container">
-            <div class="heading">
-                <h3>
-                    About Me
-                </h3>
-            </div>
-            <div class="img">
-                <img src="image/2.png" alt="">
-            </div>
-            <div class="info">
-                <p class="heading">
-                    I'M 16 YEARS OLD DEVELOPER AND FOCUSED ON BRAND IDENTITY!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia illum sit recusandae nisi odit assumenda, sed iusto maiores dolorum, iste quaerat quidem a iure. Quod asperiores veritatis illum alias, inventore.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptates vitae reiciendis quidem distinctio numquam architecto, pariatur officia itaque, tempora repudiandae doloremque cum veniam nisi asperiores. Eos perspiciatis hic aut.
-                </p>
-            </div>
-            <div class="skillBar">
-            </div>
-        </div>
-    </div>
-    <!--About section ends-->
-
-    <!--Service secton starts-->
-    <div id="service">
-        <div class="bgImg">
+        <!--Work section starts-->
+        <div id="work">
             <div class="container">
                 <div class="header">
                     <p>
-                        what i offer ?
+                        featured works
                     </p>
                 </div>
-                <!--Abilities that i will offer I wil fill in this blank later-->
-                <div class="top">
-                    <div class="first"></div>
-                    <div class="second"></div>
+                <ul class="category">
+                    <li data-val="0"  class="active">All</li>
+                    <li data-val="1">WEBDESIGN</li>
+                    <li data-val="2">DEVELOPMENT</li>
+                    <li data-val="3">PHOTOGRAPHY</li>
+                </ul>
+                <div class="content">
+                    <div class="all tabItem active">
+                        <img src="image/5.jpg" alt="">
+                        <img src="image/5.jpg" alt="">
+                        <img src="image/5.jpg" alt="">
+                        <img src="image/5.jpg" alt="">
+                        <img src="image/5.jpg" alt="">
+                        <img src="image/5.jpg" alt="">
+                    </div>
+                    <div class="design tabItem">
+                        <img src="image/3.jpg" alt="">
+                        <img src="image/3.jpg" alt="">
+                    </div>
+                    <div class="develop tabItem">
+                        <img src="image/4.jpg" alt="">
+                        <img src="image/4.jpg" alt="">
+                    </div>
+                    <div class="photograph tabItem">
+                        <img src="image/5.jpg" alt="">
+                        <img src="image/5.jpg" alt="">
+                    </div>
                 </div>
-                <div class="bottom">
-                    <div class="third"></div>
-                    <div class="fourth"></div>
-                </div>
-                <!--Ends-->
             </div>
         </div>
-    </div>
-    <!--Service section ends-->
+        <!--Work section ends-->
 
-    <div id="work">
-        <div class="container">
-            <div class="header">
+        <!--Testimonial section starts-->
+        <div id="testimonials">
+            <div id="background">            
+                <div class="header">
+                    <h1>
+                        reviews !
+                    </h1>
+                </div>
+                <div class="primary owl-carousel owl-theme">
+                    <div class="item review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                    <div class="item review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                    <div class="item review ">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                    <div class="item review ">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                    <div class="item review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                    <div class="item review ">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                    <div class="item review">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit ipsa nobis amet accusantium repellat voluptatibus. Non impedit voluptatibus dolorem sed voluptas ab dolore facilis ad. Molestias animi consequatur amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Testimonial section ends-->
+        
+        <!--Contact section starts-->
+        <div id="contact">
+            <section id="hire">
+                <h1>Contact Me</h1>
+                
+                <form>
+                    <div class="field name-box">
+                            <input type="text" id="name" placeholder="Who Are You?"/>
+                            <label for="name">Name</label>
+                            <span class="ss-icon">check</span>
+                    </div>
+
+                    <div class="field email-box">
+                            <input type="text" id="email" placeholder="name@email.com"/>
+                            <label for="email">Email</label>
+                            <span class="ss-icon">check</span>
+                    </div>
+
+                    <div class="field msg-box">
+                            <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                            <label for="msg">Msg</label>
+                            <span class="ss-icon">check</span>
+                    </div>
+
+                    <input class="button" type="submit" value="Send" />
+                </form>
+            </section>
+        </div>
+        <!--Contact section ends-->
+
+        <!--Footer starts-->
+        <div id="footer">
+            <div class="container">
                 <p>
-                    featured works
+                    ©Copyright 2017 ThemeCTG | All RightReserved.
                 </p>
             </div>
-            <ul class="category">
-                <li data-val="0"  class="active">All</li>
-                <li data-val="1">WEBDESIGN</li>
-                <li data-val="2">DEVELOPMENT</li>
-                <li data-val="3">PHOTOGRAPHY</li>
-            </ul>
-            <div class="content">
-                <div class="all tabItem active">
-                    <img src="image/5.jpg" alt="">
-                    <img src="image/5.jpg" alt="">
-                    <img src="image/5.jpg" alt="">
-                    <img src="image/5.jpg" alt="">
-                </div>
-                <div class="design tabItem">
-                    <img src="image/3.jpg" alt="">
-                    <img src="image/3.jpg" alt="">
-                </div>
-                <div class="develop tabItem">
-                    <img src="image/4.jpg" alt="">
-                    <img src="image/4.jpg" alt="">
-                </div>
-                <div class="photograph tabItem">
-                    <img src="image/1.png" alt="">
-                    <img src="image/6.png" alt="">
-                    <img src="image/7.png" alt="">
-                </div>
-            </div>
+        </div>
+        <!--Footer ends-->
+
+        <!--Scroll page from bottom-->
+        <div id="fromBottomTop">
+            <span>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </span>
         </div>
     </div>
+
+   
 </body>
 </html>
 <!--jquery-->
@@ -203,3 +427,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--javaScript-->
 <script src="js/script.js"></script>
+<!--owl carousel-->
+<script src="owl-carousel/owl.carousel.min.js"></script>
